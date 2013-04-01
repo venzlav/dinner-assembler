@@ -2,15 +2,19 @@
 
 
 
-class MainPage extends CI_Controller {
+class search extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('html_init');
+		$data['page_title'] = 'Home - Dinner Assembler';
+		$this->load->view('html_init', $data);
 		$this->load->view('header');
+		$this->load->view('menu');
 		$this->load->view('main_page');
 		$this->load->view('footer');
 	}
+	
+	//public function 
 }
 
 /* End of file main_page.php */
