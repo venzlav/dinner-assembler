@@ -2,14 +2,14 @@
 
 
 
-class search extends CI_Controller {
+class admin extends CI_Controller {
 
 	public function index()
 	{
-		$data['page_title'] = 'Home - Dinner Assembler';
+		$data['page_title'] = 'Admin page - Dinner Assembler';
 		$this->load->view('html_init', $data);
 		$this->load->view('header');
-		$this->load->view('guest_menu');
+		$this->load->view('admin_menu');
 		$this->load->view('main_page');
 		$this->load->view('footer');
 	}
